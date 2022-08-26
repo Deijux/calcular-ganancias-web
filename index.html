@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Ganancias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ec36088b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cuerpo">
+        <section>
+            <div class="titleh1">
+                <h1>Calculadora de ganancia para productos en venta</h1>
+            </div>
+            <input type="text" name="pre_ven" id="pre_ven" required placeholder="Ingrese precio en venta">
+            <input type="text" name="pre_pro" id="pre_pro" required placeholder="Ingrese precio del proveedor">
+            <input type="text" name="ven_mes" id="ven_mes" required placeholder="Ingrese cantidad de productos vendidos">
+            <button type="submit" id="butt_cal" onclick="getValueInputs()">Hacer calculo</button>
+            <button id="clearbutton" onclick="repeat()">Limpiar</button>
+            <p id="result"></p>
+        </section>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
