@@ -24,12 +24,11 @@
                     <option value="sindecimal">Sin decimal</option>
                 </select>
             </div>
-            <input type="number" name="pre_ven" id="pre_ven" required placeholder="Ingrese precio de venta">
-            <input type="number" name="pre_pro" id="pre_pro" required placeholder="Ingrese precio del proveedor">
-            <input type="number" name="ven_mes" id="ven_mes" required placeholder="Ingrese cantidad de productos vendidos">
+            <input type="number" name="pre_ven" id="pre_ven" onclick="this.select()" required placeholder="Ingrese precio de venta">
+            <input type="number" name="pre_pro" id="pre_pro" onclick="this.select()" required placeholder="Ingrese precio del proveedor">
+            <input type="number" name="ven_mes" id="ven_mes" onclick="this.select()" required placeholder="Ingrese cantidad de productos vendidos">
             <button type="submit" id="butt_cal" onclick="diferenciador()">Hacer calculo</button>
             <button id="clearbutton" onclick="repeat()">Limpiar</button>
-            <p id="result"></p>
         </section>
     </div>
 </body>
