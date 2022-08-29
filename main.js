@@ -36,7 +36,7 @@ function operacion(pre_ven, pre_pro, ven_mes) {
             timer: 5000,
             timerProgressBar: true,
         })
-    } else if (ven_mes > 1) {
+    } else if (ven_mes > 1 && pre_ven >= 1 && pre_pro) {
         Swal.fire({
             icon: 'success',
             title: 'Resultado',
@@ -76,7 +76,7 @@ function operacionNoDecimal(pre_ven, pre_pro, ven_mes) {
             timer: 5000,
             timerProgressBar: true,
         })
-    } else if (ven_mes > 1) {
+    } else if (ven_mes > 1 && pre_ven >= 1 && pre_pro) {
         Swal.fire({
             icon: 'success',
             title: 'Resultado',
@@ -102,5 +102,7 @@ function operacionNoDecimal(pre_ven, pre_pro, ven_mes) {
 }
 
 const repeat = () =>{
-    window.location.reload();
+    document.getElementById("pre_ven").value = "";
+    document.getElementById("pre_pro").value = "";
+    document.getElementById("ven_mes").value = "";
 }
