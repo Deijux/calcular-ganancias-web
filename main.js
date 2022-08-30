@@ -101,6 +101,25 @@ function operacionNoDecimal(pre_ven, pre_pro, ven_mes) {
     }
 }
 
+function info() {
+    Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+        icon: 'info',
+        html: '<b>Ejemplo con decimal: </b> 13.000 <br> <b>Ejemplo sin decimal: </b> 13000'
+        })
+}
+
 const repeat = () =>{
     document.getElementById("pre_ven").value = "";
     document.getElementById("pre_pro").value = "";
