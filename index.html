@@ -21,10 +21,13 @@
             </div>
             <div class="format">
                 <p>Seleccione si desea con decimal o sin decimal</p>
-                <select name="selección" id="formato">
-                    <option value="condecimal">Con decimal</option>
-                    <option value="sindecimal">Sin decimal</option>
-                </select>
+                <div class="seleccion">
+                    <select name="selección" id="formato">
+                        <option value="condecimal">Con decimal</option>
+                        <option value="sindecimal">Sin decimal</option>
+                    </select>
+                    <button class="info"type="button" onclick="info()">?</button>
+                </div>
             </div>
             <input type="number" name="pre_ven" id="pre_ven" onclick="this.select()" required placeholder="Ingrese precio de venta">
             <input type="number" name="pre_pro" id="pre_pro" onclick="this.select()" required placeholder="Ingrese precio del proveedor">
