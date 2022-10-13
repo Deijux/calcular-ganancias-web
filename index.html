@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcular Ganancias</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
@@ -30,14 +30,14 @@
                     <button class="info" type="button" onclick="info()">?</button>
                 </div>
             </div>
-            <form action="#">
-                <input type="number" name="pre_ven" id="pre_ven" required placeholder="Ingrese precio de venta">
-                <input type="number" name="pre_pro" id="pre_pro" required placeholder="Ingrese precio del proveedor">
-                <input type="number" name="ven_mes" id="ven_mes" required
-                    placeholder="Ingrese cantidad de productos vendidos">
-                <button type="submit" id="butt_cal">Hacer calculo</button>
-                <button type="reset">Limpiar</button>
-            </form>
+            <input type="number" name="pre_ven" id="pre_ven" onclick="this.select()" required
+                placeholder="Ingrese precio de venta">
+            <input type="number" name="pre_pro" id="pre_pro" onclick="this.select()" required
+                placeholder="Ingrese precio del proveedor">
+            <input type="number" name="ven_mes" id="ven_mes" onclick="this.select()" required
+                placeholder="Ingrese cantidad de productos vendidos">
+            <button type="submit" id="butt_cal">Hacer calculo</button>
+            <button type="button" id="butt_rst">Limpiar</button>
         </section>
     </div>
     <div class="wrapper">
@@ -47,7 +47,7 @@
         </a>
     </div>
 </body>
-<script src="main.js"></script>
+<script src="./js/main.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </html>
