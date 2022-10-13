@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,32 +12,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/calculator-solid.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/5ec36088b7.js" crossorigin="anonymous"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6098091383153681" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="cuerpo">
+    <div class="center">
         <section>
             <div class="titleh1">
                 <h1>Calculadora de ganancia para productos en venta</h1>
             </div>
             <div class="format">
-                <p>Seleccione si desea con decimal o sin decimal</p>
+                <p>Seleccione el formato</p>
                 <div class="seleccion">
                     <select name="selección" id="formato">
                         <option value="condecimal">Con decimal</option>
                         <option value="sindecimal">Sin decimal</option>
                     </select>
-                    <button class="info"type="button" onclick="info()">?</button>
+                    <button class="info" type="button" onclick="info()">?</button>
                 </div>
             </div>
-            <input type="number" name="pre_ven" id="pre_ven" onclick="this.select()" required placeholder="Ingrese precio de venta">
-            <input type="number" name="pre_pro" id="pre_pro" onclick="this.select()" required placeholder="Ingrese precio del proveedor">
-            <input type="number" name="ven_mes" id="ven_mes" onclick="this.select()" required placeholder="Ingrese cantidad de productos vendidos">
-            <button type="submit" id="butt_cal" onclick="diferenciador()">Hacer calculo</button>
-            <button id="clearbutton" onclick="repeat()">Limpiar</button>
+            <form action="#">
+                <input type="number" name="pre_ven" id="pre_ven" required placeholder="Ingrese precio de venta">
+                <input type="number" name="pre_pro" id="pre_pro" required placeholder="Ingrese precio del proveedor">
+                <input type="number" name="ven_mes" id="ven_mes" required
+                    placeholder="Ingrese cantidad de productos vendidos">
+                <button type="submit" id="butt_cal">Hacer calculo</button>
+                <button type="reset">Limpiar</button>
+            </form>
         </section>
+    </div>
+    <div class="wrapper">
+        <a class="icon instagram" href="https://www.instagram.com/iamdeijux/" target="_blank">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+        </a>
     </div>
 </body>
 <script src="main.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>
